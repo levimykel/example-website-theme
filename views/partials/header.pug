@@ -1,0 +1,11 @@
+header.site-header
+  a(href='./')
+    .logo ExampleSite
+  
+  if navContent != null
+    nav
+      ul
+        each link in navContent.getGroup('navigation.navLinks').toArray()
+          li
+            a(href=link.getLink("link").url(ctx.linkResolver))
+              != link.getText("label")

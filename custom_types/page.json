@@ -1,0 +1,27 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Unique Page ID",
+        "placeholder": "Enter Unique ID..."
+      }
+    },
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "heading1",
+        "label": "Page Title",
+        "placeholder": "Enter Title..."
+      }
+    },
+    "text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "Page Text",
+        "placeholder": "Enter page content..."
+      }
+    }
+  }
+}

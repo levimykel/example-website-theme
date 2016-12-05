@@ -1,0 +1,96 @@
+/* General */
+.container, header, footer {
+  max-width: 980px;
+  margin: auto;
+}
+
+/* Header */
+.site-header {
+  height: 30px;
+  padding: 20px 0;
+}
+.site-header,
+.site-header a {
+  color: #484d52;
+  font-weight: 700;
+}
+.site-header nav a:hover {
+  color: #72767B;
+}
+.site-header .logo {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 900;
+}
+.site-header nav {
+  float: right;
+}
+.site-header nav ul {
+  margin: 0;
+}
+.site-header nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+/* Homepage */
+.site-image {
+  margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+  color: #9A9A9A;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+footer p {
+  border-top: 1px solid #DADADA;
+  padding: 2rem 0;
+  margin-bottom: 0;
+}
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-logo {
+  width: 30px;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1060px) {
+  .site-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .site-header {
+    height: auto;
+  }
+  .site-header .logo {
+    display: block;
+    text-align: center;
+  }
+  .site-header nav {
+    float: none;
+    text-align: center;
+  }
+  .site-header nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

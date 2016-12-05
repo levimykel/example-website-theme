@@ -1,0 +1,13 @@
+extends ./layout.pug
+
+block content
+    
+  section.container
+    h1 Oh no! There was an issue.
+      
+    if message
+      p !{message}
+    else 
+      h3 We can't seem to find the page you're looking for.
+      p Return to the 
+        a(href="/") homepage

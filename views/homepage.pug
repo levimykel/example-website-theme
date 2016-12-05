@@ -1,0 +1,12 @@
+extends ./layout.pug
+
+block content
+
+  div.container
+    != homepageContent.getStructuredText('homepage.site-title').asHtml(ctx.linkResolver)
+    
+    - var image = homepageContent.getImage('homepage.image')
+    - var imageUrl = image ? image.url : ""
+    img.site-image(src=imageUrl)
+    
+    != homepageContent.getStructuredText('homepage.text').asHtml(ctx.linkResolver)

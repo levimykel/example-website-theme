@@ -1,0 +1,7 @@
+extends ./layout.pug
+
+block content
+
+  div.container
+    != pageContent.getStructuredText('page.title').asHtml(ctx.linkReolver)
+    != pageContent.getStructuredText('page.text').asHtml(ctx.linkReolver)

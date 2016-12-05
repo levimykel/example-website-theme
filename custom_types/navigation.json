@@ -1,0 +1,35 @@
+{
+  "Main" : {
+    "title" : {
+      "type" : "StructuredText",
+      "fieldset" : "Document Title",
+      "config" : {
+        "placeholder" : "Document title...",
+        "single" : "heading1"
+      }
+    },
+    "navLinks" : {
+      "type" : "Group",
+      "fieldset" : "Navigation Links",
+      "config" : {
+        "fields" : {
+          "label" : {
+            "type" : "Text",
+            "config" : {
+              "placeholder" : "Link label",
+              "label" : "Nav Label"
+            }
+          },
+          "link" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "page" ],
+              "placeholder" : "Link to a document"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "Main" : {
+    "site-title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "heading1",
+        "label" : "Site Title",
+        "placeholder" : "Enter website title..."
+      }
+    },
+    "image" : {
+      "type" : "Image",
+      "config" : {
+        "label" : "Homepage Image",
+        "placeholder" : "Select an Image...",
+        "constraint" : {
+          "width" : 1200
+        }
+      }
+    },
+    "text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, preformatted, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label" : "Homepage Text",
+        "placeholder" : "Enter homepage Content"
+      }
+    }
+  }
+}
