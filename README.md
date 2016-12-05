@@ -1,4 +1,4 @@
-# prismic.io example theme
+# prismic.io Example Theme
 
 This is a simple nodejs website example theme for prismic.io.
 

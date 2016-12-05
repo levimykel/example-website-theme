@@ -3,10 +3,13 @@ extends ./layout.pug
 block content
 
   div.container
-    != homepageContent.getStructuredText('homepage.site-title').asHtml(ctx.linkResolver)
+    
+    - var homepageTitle = homepageContent.getStructuredText('homepage.site-title')
+    != homepageTitle ? homepageTitle.asHtml(ctx.linkResolver) : ""
     
     - var image = homepageContent.getImage('homepage.image')
     - var imageUrl = image ? image.url : ""
     img.site-image(src=imageUrl)
     
-    != homepageContent.getStructuredText('homepage.text').asHtml(ctx.linkResolver)
+    !- var homepageText = homepageContent.getStructuredText('homepage.text')
+    != homepageText ? homepageText.asHtml(ctx.linkResolver) : ""
