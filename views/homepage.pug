@@ -11,5 +11,5 @@ block content
     - var imageUrl = image ? image.url : ""
     img.site-image(src=imageUrl)
     
-    !- var homepageText = homepageContent.getStructuredText('homepage.text')
+    - var homepageText = homepageContent.getStructuredText('homepage.text')
     != homepageText ? homepageText.asHtml(ctx.linkResolver) : ""
