@@ -8,8 +8,8 @@ var PConfig = require('./prismic-configuration');
 var request = require('request');
 
 app.listen(PORT, function() {
-  const repoEndpoint = PConfig.apiEndpoint.replace("/api", "");
-  request.post(repoEndpoint + '/app/settings/onboarding/run', {})
+  const repoEndpoint = PConfig.apiEndpoint.replace('/api', '');
+  request.post(repoEndpoint + '/app/settings/onboarding/run', {});
   console.log('Point your browser to: http://localhost:' + PORT);
 });
 
@@ -71,11 +71,11 @@ app.get('/preview', function(req, res) {
 app.get('/', function(req, res) {
   
   // Query the homepage content
-  req.prismic.api.getSingle("homepage").then(function(homepageContent) {
+  req.prismic.api.getSingle('homepage').then(function(homepageContent) {
     
     // Render the 404 page if this uid is not found
     if(!homepageContent) {
-      return render404(req, res, "Could not find a homepage document in your content repository.");
+      return render404(req, res, 'Could not find a homepage document in your content repository.');
     }
     
     // Render the homepage
