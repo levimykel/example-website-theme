@@ -2,8 +2,7 @@ extends ./layout.pug
 
 block content
 
-  div.container
-    
+  div.container(data-wio-id=pageContent.id)
     - var pageTitle = pageContent.getStructuredText('page.title')
     != pageTitle ? pageTitle.asHtml(ctx.linkResolver) : ""
     

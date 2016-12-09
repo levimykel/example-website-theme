@@ -3,6 +3,10 @@
   max-width: 980px;
   margin: auto;
 }
+.wio-link {
+  margin-top: 10px;
+  float: right;
+}
 
 /* Header */
 .site-header {
@@ -59,6 +63,13 @@ footer a {
   margin-top: 10px;
 }
 
+/* Help Page */
+.help img {
+  margin-bottom: 32px;
+  -webkit-box-shadow: 1px 1px 15px 2px #D6D6D6;
+  box-shadow: 1px 1px 15px 2px #D6D6D6;
+}
+
 /* Media Queries */
 @media (max-width: 1060px) {
   .site-header {
@@ -76,6 +87,9 @@ footer a {
   }
   h3 {
     font-size: 18px;
+  }
+  .wio-link {
+    display: none;
   }
   .site-header {
     height: auto;

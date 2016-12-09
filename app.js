@@ -11,6 +11,7 @@ app.listen(PORT, function() {
   const repoEndpoint = PConfig.apiEndpoint.replace('/api', '');
   request.post(repoEndpoint + '/app/settings/onboarding/run', {});
   console.log('Point your browser to: http://localhost:' + PORT);
+  console.log('For help point your browser to: http://localhost:' + PORT + '/help');
 });
 
 
@@ -81,6 +82,20 @@ app.get('/', function(req, res) {
     // Render the homepage
     res.render('homepage', { homepageContent: homepageContent });
   });
+});
+
+
+/**
+* Help Page Route
+*/
+app.get('/help', function(req, res) {
+  const repoRegexp = new RegExp('^(https?:\/\/([\\-\\w]+)\\.[a-z]+\\.(io|dev))\/api$');
+  const match = PConfig.apiEndpoint.match(repoRegexp);
+  const repoURL = match[1];
+  const name = match[2];
+  const host = req.headers.host;
+  const isConfigured = name !== 'your-repo-name';
+  res.render('help', {isConfigured, repoURL, name, host});
 });
 
 

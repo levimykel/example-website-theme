@@ -1,0 +1,82 @@
+extends ./layout.pug
+
+block content
+
+  div.help.container
+    
+    h1 Help Page
+    p You've launched your project, well done! This page will help guide you through the process of adding pages to your website on prismic.io.
+    p You can visit this page anytime by pointing your browser to 
+      a(href=host+"/help") !{host}/help
+    
+    h2 Visit your prismic.io dashboard
+    p Checkout your prismic.io dashboard  
+      if isConfigured
+        a(href=repoURL target="_blank")
+          strong !{name}
+      else 
+        a(href="http://prismic.io/dashboard" target="_blank") 
+          strong here
+    p On your dashboard you'll be able to add and modify your website pages.
+    
+    h2 Create a homepage
+    p From your content repository dashboard, navigate to the content page.
+    img(src="images/help/nav-content.png")
+    p On the Content page, click on 
+      strong New 
+      |and select 
+      strong Homepage
+      |.
+    p Fill in the content of your homepage. You will only be able to create one homepage, but you can edit it later as you need.
+    p
+      strong Save 
+      |and 
+      strong Publish
+      |.
+    img(src="images/help/save-and-publish.gif")
+    
+    h2 Create some pages
+    p Next, fill in some pages for your site. From the content page, click on 
+      strong New 
+      |and select 
+      strong Page
+      |.
+    p You will be able to create as many pages as you want. Once you've filled some content for a page, don't forget to 
+      strong Save 
+      |and 
+      strong Publish
+      |.
+    
+    h2 Set up the navigation
+    p On the Content page, click on 
+      strong New 
+      |and select 
+      strong Navigation
+      |. Like the homepage, you will only be able to create one navigation, but you can also edit it later as you need.
+    p Start by putting in a document title. Something like "Main Navigation" will do. This is just used to help identify the navigation on the Content page.
+    p Next add a few links. For each menu item, add a Nav Label that will display and link to a page document.
+    img(src="images/help/add-nav-item.gif")
+    p Don't forget to 
+      strong Save 
+      |and 
+      strong Publish
+      |.
+    p Now you should have all the pieces in place to make your website work!
+    
+    h2 Add the preview functionality
+    p If you want to add the ability to preview unpublished pages or changes, then you need to add the preview functionality from your prismic.io content repository.
+    p Click on 
+      strong Settings 
+      |at the bottom-left of your dashboard, then select 
+      strong Previews
+      |.
+    img(src="images/help/nav-settings.png")
+    p Add a new site. For the Site Name enter something like 
+      strong Preview
+      |. For the Preview URL enter 
+      strong http://localhost:3000/preview
+    img(src="images/help/add-preview.png")
+    p Now you'll be able to preview changes to your pages by clicking on the preview button in the upper left corner when editing your pages. Note that when you deploy your site live, you will need to update this url or add another preview site for it to work.
+    img(src="images/help/preview.png")
+    P Once you set up previews, you will notice the edit buttons on every page or your website. Clicking this will take you directly to your dashboard and allow you to quickly make changes to that page. Don't worry, the edit buttons will only be visible and usable by you. They will be visible when you're logged into your prismic dashboard.
+    img(src="images/help/edit-button.png")
