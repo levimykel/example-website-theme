@@ -102,7 +102,7 @@ app.get('/help', function(req, res) {
 /**
 * Page Route
 */
-app.get('/:uid', function(req, res) {
+app.get('/page/:uid', function(req, res) {
   
   // Define the UID from the url
   var uid = req.params.uid;
@@ -118,4 +118,12 @@ app.get('/:uid', function(req, res) {
     // Render the page
     res.render('page', { pageContent: pageContent });
   });
+});
+
+
+/**
+* Render 404 for any other route
+*/
+app.use('*', function(req, res) {
+  return render404(req, res);
 });
