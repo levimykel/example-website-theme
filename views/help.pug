@@ -7,7 +7,7 @@ block content
     h1 Help Page
     p You've launched your project, well done! This page will help guide you through the process of adding pages to your website on prismic.io.
     p You can visit this page anytime by pointing your browser to 
-      a(href=host+"/help") !{host}/help
+      a(href='/help') !{host}/help
     
     h2 Visit your prismic.io dashboard
     p Checkout your prismic.io dashboard  
@@ -40,8 +40,8 @@ block content
       strong New 
       |and select 
       strong Page
-      |.
-    p You will be able to create as many pages as you want. Once you've filled some content for a page, don't forget to 
+      |. You will be able to create as many pages as you want.
+    p Enter a UID for the page, this will be used for the page's url. Once you've filled in some content, don't forget to 
       strong Save 
       |and 
       strong Publish
@@ -61,7 +61,13 @@ block content
       |and 
       strong Publish
       |.
-    p Now you should have all the pieces in place to make your website work!
+    p Now you should have all the pieces in place to make your website work! Go back to the 
+      a(href='/') homepage 
+      |to see your website running!
+    
+    h2 Edit buttons
+    p You might have noticed that you have an edit button on the top right of each page. Clicking this will take you directly to your dashboard and allow you to quickly make changes to that page. Don't worry, the edit buttons will only be visible and usable by you. They will be visible when you're logged into your prismic dashboard.
+    img(src="images/help/edit-button.png")
     
     h2 Add the preview functionality
     p If you want to add the ability to preview unpublished pages or changes, then you need to add the preview functionality from your prismic.io content repository.
@@ -78,5 +84,3 @@ block content
     img(src="images/help/add-preview.png")
     p Now you'll be able to preview changes to your pages by clicking on the preview button in the upper left corner when editing your pages. Note that when you deploy your site live, you will need to update this url or add another preview site for it to work.
     img(src="images/help/preview.png")
-    P Once you set up previews, you will notice the edit buttons on every page or your website. Clicking this will take you directly to your dashboard and allow you to quickly make changes to that page. Don't worry, the edit buttons will only be visible and usable by you. They will be visible when you're logged into your prismic dashboard.
-    img(src="images/help/edit-button.png")
