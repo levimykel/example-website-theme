@@ -30,7 +30,7 @@ $ npm install -g prismic-cli
 Point your terminal to the location where you want to install the project folder and run the following command. The command line tool will prompt you to pick a name for your prismic repository and the project folder.
 
 ```
-$ prismic theme https://github.com/prismic-levi/example-website-theme
+$ prismic theme https://github.com/levimykel/example-website-theme
 ```
 
 This will automatically install the project files, set up a new prismic-repository, and create the custom types.
